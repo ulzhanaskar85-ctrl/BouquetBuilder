@@ -9,7 +9,7 @@ public class Bouquet {
     private final boolean delivery;
 
     private Bouquet(Builder builder) {
-        this.flowers = builder.flowers;
+        this.flowers = new ArrayList<>(builder.flowers);
         this.wrapping = builder.wrapping;
         this.ribbon = builder.ribbon;
         this.greenery = builder.greenery;
